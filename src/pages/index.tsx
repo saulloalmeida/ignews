@@ -4,7 +4,11 @@ import { SubscribeButton } from '../components/SubscribeButton'
 import styles from './home.module.scss'
 import { stripe } from '../services/stripe'
 
-interface HomeProps{
+//Client-side (na função - useeffect)
+//Server-side SSR
+//Static SSG
+
+interface HomeProps{ 
   product:{
     priceId: string,
     amount:number
